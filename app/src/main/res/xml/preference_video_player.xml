@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ SkyTube
+  ~ Copyright (C) 2017  Ramon Mifsud
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation (version 3 of the License).
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<ListPreference
+		app:key="@string/pref_key_maximum_res"
+		app:title="@string/pref_title_maximum_res"
+		app:summary="@string/pref_summary_maximum_res"/>
+
+	<ListPreference
+		app:key="@string/pref_key_minimum_res"
+		app:title="@string/pref_title_minimum_res"
+		app:summary="@string/pref_summary_minimum_res"/>
+
+	<ListPreference
+		app:key="@string/pref_key_choose_player"
+		app:title="@string/pref_title_choose_player"
+		app:summary="@string/pref_summary_choose_player"
+		app:entries="@array/pref_video_players"
+		app:entryValues="@array/pref_video_players_values"
+		app:defaultValue="@string/pref_default_player_value"/>
+
+	<ListPreference
+		app:key="@string/pref_key_screen_orientation"
+		app:title="@string/pref_title_screen_orientation"
+		app:summary="@string/pref_summary_screen_orientation"
+		app:entries="@array/screen_orientations"
+		app:entryValues="@array/screen_orientations_values"
+		app:defaultValue="@string/pref_screen_auto_value"/>
+
+	<CheckBoxPreference
+		app:key="@string/pref_key_disable_screen_gestures"
+		app:title="@string/pref_title_disable_screen_gestures"
+		app:summary="@string/pref_summary_disable_screen_gestures"/>
+
+	<CheckBoxPreference
+		app:defaultValue="true"
+		app:key="@string/pref_key_enable_immersive_mode"
+		app:summary="@string/pref_summary_enable_immersive_mode"
+		app:title="@string/pref_title_enable_immersive_mode" />
+
+	<CheckBoxPreference
+		app:key="@string/pref_key_switch_volume_and_brightness"
+		app:title="@string/pref_title_switch_volume_and_brightness"
+		app:summary="@string/pref_summary_switch_volume_and_brightness"/>
+
+</PreferenceScreen>
